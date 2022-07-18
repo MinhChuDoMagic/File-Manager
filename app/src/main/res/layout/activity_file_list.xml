@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListFileActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/nofiles_textview"
+        android:visibility="invisible"
+        android:text="NO FILES FOUND"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/backButton"
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24"
+        android:background="@color/white"/>
+
+    <ImageButton
+        android:id="@+id/optionButton"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@drawable/ic_baseline_more_vert_24" />
+
+</RelativeLayout>

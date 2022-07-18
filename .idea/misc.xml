@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Workspace/Android/EasyTutoFileManager/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.145" />
+        <entry key="..\:/Workspace/Android/EasyTutoFileManager/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.145" />
+        <entry key="..\:/Workspace/Android/EasyTutoFileManager/app/src/main/res/drawable/ic_baseline_folder_24.xml" value="0.145" />
+        <entry key="..\:/Workspace/Android/EasyTutoFileManager/app/src/main/res/drawable/ic_baseline_insert_drive_file_24.xml" value="0.145" />
+        <entry key="..\:/Workspace/Android/EasyTutoFileManager/app/src/main/res/drawable/ic_baseline_more_vert_24.xml" value="0.145" />
+        <entry key="..\:/Workspace/Android/EasyTutoFileManager/app/src/main/res/drawable/ic_launcher_background.xml" value="0.145" />
+        <entry key="..\:/Workspace/Android/EasyTutoFileManager/app/src/main/res/layout/activity_file_list.xml" value="0.24912280701754386" />
+        <entry key="..\:/Workspace/Android/EasyTutoFileManager/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Workspace/Android/EasyTutoFileManager/app/src/main/res/layout/name_layout.xml" value="0.24547101449275363" />
+        <entry key="..\:/Workspace/Android/EasyTutoFileManager/app/src/main/res/layout/recycler_item.xml" value="0.1" />
+        <entry key="..\:/Workspace/Android/EasyTutoFileManager/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.145" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
