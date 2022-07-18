@@ -4,9 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.AlertDialog;
 import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Environment;
+import android.text.InputType;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -82,15 +86,18 @@ public class ListFileActivity extends AppCompatActivity {
                     @Override
                     public boolean onMenuItemClick(MenuItem item) {
                         if(item.getTitle().equals("Add Folder")){
-                            final Dialog nameDialog = new Dialog(getApplicationContext());
-                            nameDialog.setContentView(R.layout.name_layout);
-                            Button okButton = findViewById(R.id.buttonOk);
-                            EditText nameText = findViewById(R.id.editTextName);
-                            okButton.setOnClickListener(new View.OnClickListener() {
-                                public void onClick(View v) {
-                                    if(nameText.getText().toString() == null)
+                            AlertDialog.Builder nameDialog = new AlertDialog.Builder(ListFileActivity.this);
+                            nameDialog.setTitle("Folder name:");
+                            final EditText nameInput = new EditText(ListFileActivity.this);
+                            nameInput.setInputType(InputType.TYPE_CLASS_TEXT);
+
+                            nameDialog.setView(nameInput);
+                            nameDialog.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialogInterface, int i) {
+                                    if(nameInput.getText().toString() == null)
                                         return;
-                                    File file = new File(path,nameText.getText().toString());
+                                    File file = new File(path,nameInput.getText().toString());
 
                                     if (!file.exists()){
 
@@ -106,6 +113,8 @@ public class ListFileActivity extends AppCompatActivity {
                                     }
                                 }
                             });
+
+                            nameDialog.show();
                         }
 
                         return true;
